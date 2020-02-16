@@ -1,0 +1,67 @@
+.footer{
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+
+  &__title{
+    text-transform: uppercase;
+    font-size: rem(20px);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 73px 0 30px 0;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #333b46;
+  }
+  &__text{
+    width:460px;
+    font-size: rem(14px);
+    color:#90959b;
+    text-align: center;
+    margin: 0 0 67px 0;
+    line-height: 25px;
+  }
+  &__comp{
+    color: #323a45;
+    font-size: rem(26px);
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+  }
+  &__copy{
+    font-size: rem(14px);
+    color: #81868e;
+    margin: 0 0 37px 0;
+    letter-spacing: 1px;
+  }
+}
+.map{
+  overflow:hidden;
+  position:relative;
+  height:450px;
+  width: 100%;
+  margin-bottom: 56px;
+
+  & iframe{
+    position:absolute;
+  }
+}
+.map-pointer img{
+  width: 30px;
+  position: absolute;
+ /* top: 213px;
+  left: 664px;*/
+}
+.contacts__icons-a{
+  text-decoration: none;
+  margin-left:5px;
+}
+.svg-icon{
+  width: 27px;
+  height: 27px;
+  margin-left: 10px;
+  margin-bottom: 60px;
+  &:last-of-type{
+    margin-left: 0;
+  }
+}

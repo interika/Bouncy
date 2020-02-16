@@ -1,0 +1,73 @@
+.container-top{
+  background: #f3f3f3;
+
+}
+.portfolio{
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+
+  &__title{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333b46;
+    text-transform: uppercase;
+    margin: 83px 0 16px 0;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  &__disc{
+    color: #81868e;
+    margin-bottom: 76px;
+    width: 490px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-size: rem(14px);
+  }
+  &-nav{
+    margin-bottom: 50px;
+    &__link{
+      text-decoration: none;
+      color: #525252;
+      margin: 0 28px 0 0;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      border:0;
+
+      &:hover:after {
+          display: block;
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 70%;
+          background: #19bd9a;
+          bottom: -15px;
+           left: 10%;
+      }
+
+      &:last-of-type{
+        margin-right: 0;
+      }
+
+    }
+  }
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 1115px;
+
+  &-item{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 25%;
+
+    & img{
+      max-width: 100%;
+    }
+  }
+}
